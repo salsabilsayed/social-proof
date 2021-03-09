@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+}
+body {
+    font-family: 'Spartan', sans-serif;
+}
+section {
+    width: 90%;
+    margin:auto;
+    padding: 70px 0;
+}
+.clearfix {
+    clear: both;
+}
+/********** first block ***********/
+main {
+    background: url('../images/bg-pattern-top-mobile.svg') no-repeat top left,
+    url('../images/bg-pattern-bottom-mobile.svg') no-repeat bottom right;
+}
+.first-block {
+    text-align: center;
+}
+
+h1 {
+    color:  hsl(300, 43%, 22%);
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.first-block article:first-of-type p {
+    color: hsl(303, 10%, 53%);
+    padding-bottom: 40px;
+}
+.first-block article:last-of-type {
+    margin-bottom: 60px;
+}
+.first-block article:last-of-type p{
+    background-color: hsl(300, 24%, 96%);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+.first-block span{
+    display: block;
+    color: hsl(300, 43%, 22%);
+    padding-top: 10px;
+}
+/***** second block *******/
+.second-block article {
+    background-color:  hsl(300, 43%, 22%);
+    padding: 30px 25px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color : hsl(300, 24%, 96%);
+    line-height: 1.5;
+    word-spacing: 0.2em;
+}
+.second-block img {
+    float: left;
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 20px;
+}
+.second-block .float-p {
+    float: left;
+    margin: 5px 0 20px 0;
+}
+.float-p p {
+    color: hsl(333, 80%, 67%);
+}
+@media (min-width:992px){
+    main {
+        height: 100vh;
+        background: url('../images/bg-pattern-top-desktop.svg') no-repeat,
+        url('../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+    }
+    section {
+        width: 80%;
+        font-size: 13px;
+    }
+    .first-block{
+        display: flex;
+        justify-content: space-between;
+    }
+    .first-block article{
+        width: 40%;
+        text-align: left;
+    }
+    h1 {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 1;
+    }
+    .first-block article:first-of-type p {
+        line-height: 1.6;
+    }
+    .first-block span {
+        display: inline-block;
+        margin-left: 30px;
+        padding-top: 0;
+    }
+    .first-block article:last-of-type p {
+        padding: 20px 0 20px 40px;
+    }
+    .first-block article:last-of-type p:first-of-type{
+        position: relative;
+        right: 20%;
+    }
+    .first-block article:last-of-type p:nth-of-type(2){
+        position: relative;
+        right: 10%;
+    }
+    .second-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .second-block article {
+        width: 32%;
+    }
+    .second-block article:nth-of-type(2){
+        position: relative;
+        top: 20px;
+    }
+    .second-block article:nth-of-type(3){
+        position: relative;
+        top: 40px;
+    }
+}
